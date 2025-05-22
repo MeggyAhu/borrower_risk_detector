@@ -9,15 +9,9 @@ st.title("Borrower Risk Detector App")
 st.write(
     "This App dectects borrowers who are likely to default"
 )
-#load the trained model and scaler
-model = pickle.load(open('Digital lenders.pkl', 'rb'))
 
-#Streamlit app title
-st.title("Borrower Risk Predictor")
 
-#Load the image
-image = Image.open("loan1.jpg")
-st.image(image, width =550, caption =  "Default Detector")
+
 
 #sidebar for user input
 st.sidebar.header("Enter the Borrower's Information")
