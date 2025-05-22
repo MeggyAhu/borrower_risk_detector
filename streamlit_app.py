@@ -3,8 +3,7 @@ import pandas as pd
 import numpy as np
 import pickle
 from PIL import Image
-from sklearn.preprocessing import MinMaxScaler
-from sklearn.ensemble import RandomForestClassifier
+
 
 st.title("Borrower Risk Detector App")
 st.write(
@@ -54,8 +53,7 @@ input_data = pd.DataFrame({
 st.subheader("User Input Data")
 st.table(input_data)
 
-scaler = MinMaxScaler()
-input_data_scaled = scaler.fit_transform(input_data)
+
 
 # Make prediction
 st.header("Prediction Results")
