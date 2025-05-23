@@ -3,8 +3,8 @@ import pandas as pd
 import numpy as np
 import pickle
 from PIL import Image
-from sklearn.preprocessing import MinMaxScaler
-from sklearn.ensemble import RandomForestClassifier
+import MinMaxScaler
+
 
 #load the trained model and scaler
 model = pickle.load(open('Digital lenders.pkl', 'rb'))
