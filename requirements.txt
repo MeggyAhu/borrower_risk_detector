@@ -8,4 +8,4 @@ joblib
 xgboost
 lightgbm
 pickle
-
+from sklearn.preprocessing import MinMaxScaler
